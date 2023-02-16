@@ -64,6 +64,18 @@
 			   return t1 ;
 		}
 
+		function pa(u){
+			var u1;
+			if(u == "F"){
+					u1 = "Fahrenheit";
+			   }else if(u == "K"){
+					u1 = "Réaumur";
+			   }else if(u == "R"){
+					u1 = "Kelvin";
+			   }
+			   return u1 ;
+		}
+
 		//---------------------------
 	    $(document).ready(function(){
 			$("button").click(function(){
@@ -75,12 +87,10 @@
 		//---------------------------	   
 
 			   var t1;
-			   var u1;
+			   var u1 = pa(u);
 			   var result = conversion(t,u) ;
 
-			   document.getElementById("result").innerHTML = "Tempereature is "+t2+"in "+u1;
-
-
+			   document.getElementById("result").innerHTML = "Tempereature is "+result+" in "+u1;
 
 			});
 		});
