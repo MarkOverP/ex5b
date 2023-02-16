@@ -63,6 +63,7 @@
 			   }
 			   return t1 ;
 		}
+
 		//---------------------------
 	    $(document).ready(function(){
 			$("button").click(function(){
@@ -77,7 +78,9 @@
 			   var u1;
 			   var result = conversion(t,u) ;
 
-			   alert("Temperature is "+result+" in "+u);
+			   document.getElementById("result").innerHTML = "Tempereature is "+t2+"in "+u1;
+
+
 
 			});
 		});
